@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nuv. caffè – Home</title>
+  <meta name="description" content="Bem-vindo ao nuv. caffè. Descubra nossos cafés artesanais e lanches irresistíveis.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.png" alt="Logo nuv. caffè" height="50" width="50"/>
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menu">☰</button>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cardapio.html">Cardápio</a></li>
+        <li><a href="sobre.html">Nossa História</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+      <section class="slideshow">
+        <div class="slides">
+          <div class="slide active">
+            <img src="assets/images/coffee1.jpg" alt="Café Especial">
+          </div>
+          <div class="slide">
+            <img src="assets/images/paoqueijo1.jpg" alt="Pão de Queijo">
+          </div>
+          <div class="slide">
+            <img src="assets/images/cookie1.jpg" alt="Cookie">
+          </div>
+        </div>
+      </section>
+
+    <section class="destaques">
+      <div class="cards">
+        <div class="card">
+          <img src="assets/images/coffee1.jpg" alt="Café Especial">
+          <h3>Café Especial</h3>
+          <p>R$ 8,00</p>
+        </div>
+        <div class="card">
+          <img src="assets/images/paoqueijo1.jpg" alt="Pão de Queijo">
+          <h3>Pão de Queijo</h3>
+          <p>R$ 10,00</p>
+        </div>
+        <div class="card">
+          <img src="assets/images/cookie1.jpg" alt="Cookie Especial">
+          <h3>Cookie Especial</h3>
+          <p>R$ 15,00</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="promoModal" class="modal">
+    <div class="modal-content">
+      <button class="close" aria-label="Fechar">&times;</button>
+      
+      <div id="promoFormContainer">
+        <h2>Você ganhou um cupom de desconto!</h2>
+        <p>Cadastre seu nome e número para receber o cupom:</p>
+        <form id="promoForm">
+          <input type="text" id="promoName" name="promoName" placeholder="Seu nome" required>
+          <input type="text" id="promoPhone" name="promoPhone" placeholder="Seu telefone" required>
+          <button type="submit">Receber Cupom</button>
+        </form>
+      </div>
+
+      <div id="couponContainer" style="display: none; text-align: center;">
+        <h2>Parabéns!</h2>
+        <p>Seu cupom de 10% é:</p>
+        <p><strong>NUV10</strong></p>
+        <button id="closeCoupon">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 nuv. caffè. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
